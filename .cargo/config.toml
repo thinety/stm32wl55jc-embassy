@@ -1,0 +1,9 @@
+[build]
+target = "thumbv7em-none-eabi"
+
+[target.thumbv7em-none-eabi]
+# chip is actually STM32WL55JCIx but it does not work right now
+runner = "probe-rs run --chip STM32WLE5JCIx"
+
+[env]
+DEFMT_LOG = "info"
